@@ -11,8 +11,8 @@ export const Input = ({
     textArea
 }) => {
 
-    const handleValueChange = (event) => {
-        onChangeHandler(event.target.value, field);   
+    const handleValueChange = (event) =>{
+        onChangeHandler(event.target.value, field);
     }
 
     const handleInputBlur = (event) => {
@@ -26,13 +26,13 @@ export const Input = ({
         </div>
         <div>
             {textArea ? (
-                <textArea
+                <textarea
                     type={type}
                     value={value}
                     onChange={handleValueChange}
                     onBlur={handleInputBlur}
-                    row={5}
-                    style={{maxWidth: "400px"}}
+                    rows={5}
+                    style={{maxWidth: '400px'}}
                 />
             ) : (
                 <input 

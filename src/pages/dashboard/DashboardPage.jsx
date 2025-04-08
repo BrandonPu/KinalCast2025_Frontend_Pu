@@ -1,8 +1,10 @@
 
+
 export const DashboardPage = () => {
   return (
     <div>
-        DashBoardPage
+      DashboardPage
     </div>
   )
 }
+
